@@ -10,6 +10,7 @@ const Container = () => {
       <Titulo>Olá Fulano!</Titulo>
       <Conteudo>
         <Conta />
+        <Conta />
       </Conteudo>
     </ContainerWrapper>
   );
@@ -25,6 +26,10 @@ const Conteudo = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export default Container;
